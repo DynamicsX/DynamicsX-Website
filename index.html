@@ -52,27 +52,7 @@
           <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dd-box-shadow">
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-                <ul class="dd-box-shadow">
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="index.html#contact">Contact</a></li>
+         <li><a href="index.html#contact">Contact</a></li>
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -86,25 +66,61 @@
   <main id="main">
 
     <!-- Hero Section - Home Page -->
-    <section id="hero" class="hero" >
-
-    <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
---> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Dynamics X</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Are you ready to elevate your business with Microsoft Power Platform?</p>
-          </div>
-          <div class="col-lg-5">
-            <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
-              <input type="text" class="form-control" placeholder="Enter email address">
-              <input type="submit" class="btn btn-primary" value="Sign up">
-            </form>
+    <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+      <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Dynamics X</span></h2>
+            <p class="animate__animated fanimate__adeInUp">"Dedicated to propelling your business forward. Explore our suite of tailored services crafted to elevate your success. Ready to take the next step? Let's collaborate for growth."</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
           </div>
         </div>
+  
+        <!-- Slide 2 
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>-->
+  
+        <!-- Slide 3
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div> -->
+  
+      <!--   <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true" style="color: black;"></span>
+        </a>
+  
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        </a>  -->
+  
       </div>
-
+  
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+        </g>
+      </svg>
+  
     </section><!-- End Hero Section -->
 
     <!-- PowerPlatform - Home Page -->
@@ -157,8 +173,8 @@
             <h2>Empowering Innovation.</h2>
         <!--    <h2>Embracing Freedom.</h2>
             <h2> Where Creativity Knows No Constraints.</h2>-->
-            <p>"At Dynamics X, we lead with confidence, offering bespoke Microsoft Power Platform solutions to propel your business forward. Let's embark on a transformative digital journey, together conquering new horizons.</p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <p>At Dynamics X, we lead with confidence, offering bespoke Microsoft Power Platform solutions to propel your business forward. Let's embark on a transformative digital journey, together conquering new horizons.</p>
+        <!--    <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
           </div>
 
           <div class="col-xl-7">
@@ -210,7 +226,7 @@
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Following are the services provided by Dynamics X</p>
+        <p>At Dynamics X, we offer a comprehensive suite of services tailored to elevate your business.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -219,9 +235,9 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-pen"></i></div>
-              <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Canvas Applications</a></h4>
+              <div class="flex-shrink-0" ><img src="assets\img/Power_Platform_scalable/PowerApps_scalable.svg" ></div>
+              <div class="img-setting">
+                <h4 class="title" >Custom Applications: Tailored Solutions for Streamlined Operations</h4> <!--CHANGE COLOR ON HOVER-->
                 <p class="description">Craft intuitive and user-friendly applications with our Canvas Apps service. Whether you need a mobile app or a desktop application, 
                   we'll design a solution that enhances productivity and simplifies workflows for your team.</p>
               </div>
@@ -231,20 +247,20 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-layout-text-sidebar"></i></div>
-              <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Model Driven Applications</a></h4>
-                <p class="description">Unlock the full potential of your data with our Model Driven Apps service. From data visualization to complex business processes, 
-                  we'll build dynamic apps that drive efficiency and provide valuable insights for informed decision-making.</p>
+              <div class="flex-shrink-0"><img src="assets\img\Power_Platform_scalable\Dataverse_scalable.svg">
+              </div>
+              <div class="img-setting">
+                <h4 class="title">Microsoft Dataverse: Empower Your Data</h4>
+                <p class="description">Centralize, structure, and analyze your business data seamlessly with Microsoft Dataverse. Drive informed decisions, enhance collaboration, and ensure compliance effortlessly. Partner with Dynamics X to unlock the full potential of your data assets and accelerate your business growth.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Power BI</a></h4>
+              <div class="flex-shrink-0"><img src="assets\img/Power_Platform_scalable/PowerBI_scalable.svg"></div>
+              <div class="img-setting"> 
+                <h4 class="title">Power BI: Visualizing Insights for Informed Decisions</h4>
                 <p class="description">Unlock the full potential of your data with our Power BI service. From interactive dashboards to advanced analytics, 
                   we'll help you transform raw data into actionable insights that drive growth and inform strategic decisions.</p>
               </div>
@@ -253,9 +269,9 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-arrow-repeat"></i></div>
-              <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Power Automate</a></h4>
+              <div class="flex-shrink-0"><img src="assets\img/Power_Platform_scalable/PowerAutomate_scalable.svg"></div>
+              <div class="img-setting">
+                <h4 class="title">Power Automate: Simplifying Workflows for Tangible Results</h4>
                 <p class="description">Streamline your workflows and boost productivity with our Power Automate service. From automating repetitive tasks to orchestrating complex processes, 
                   we'll help you optimize your operations and free up valuable time for strategic initiatives.</p>
               </div>
@@ -264,22 +280,22 @@
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
-              <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">AI Builder</a></h4>
-                <p class="description">Harness the power of artificial intelligence to automate tasks and gain deeper insights with our AI Builder service. 
-                  From predictive analytics to sentiment analysis, we'll help you leverage AI to streamline operations and drive innovation.</p>
+              <div class="flex-shrink-0"><img src="assets\img/Power_Platform_scalable/PowerPages_scalable.svg"></div>
+              <div class="img-setting">
+                <h4 class="title ">Power Pages: Redefining Web Development</h4>
+                <p class="description">With intuitive tools and robust capabilities, create stunning web pages effortlessly. 
+                  Enjoy responsive design for seamless browsing across all devices and gain valuable insights with built-in analytics, 
+                  harnessing the power of Power Pages for unparalleled online engagement.  </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-cloud"></i></div>
-              <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link"></a>Microsoft Azure</h4>
-                <p class="description">Transform your business with the flexibility and scalability of Microsoft Azure. 
-                  Our Azure services encompass everything from cloud computing to data storage, providing a robust foundation for your digital transformation journey.</p>
+              <div class="flex-shrink-0"><img src="assets\img\Power_Platform_scalable/AIBuilder_scalable.svg"> </div>
+              <div class="img-setting">
+                <h4 class="title ">AI Builder: Transforming Operations with Artificial Intelligence</h4>
+                <p class="description">Experience the transformative power of AI with our AI Builder solutions. From automating tasks to predictive analytics, we harness artificial intelligence to optimize operations and unlock new opportunities for growth.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -301,7 +317,7 @@
             <div class="content px-xl-5">
               <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Got questions? We've got answers.
               </p>
             </div>
           </div>
@@ -310,41 +326,42 @@
 
             <div class="faq-container">
               <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <h3><span class="num">1.</span> <span>What is the Microsoft Power Platform, and how can it benefit my business?</span></h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>The Microsoft Power Platform is a suite of tools comprising Power BI, Power Apps, Power Automate, and Power Virtual Agents. 
+                    It enables organizations to analyze data, build custom applications, automate workflows, and create chatbots, empowering them to drive digital transformation and improve productivity.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                <h3><span class="num">2.</span> <span>What services do you offer within the Microsoft Power Platform?</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>We offer a range of services, including Power BI dashboard development, custom Power Apps development , workflow automation with Power Automate, and chatbot development using Power Virtual Agents.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                <h3><span class="num">3.</span> <span>How can we get started with implementing Microsoft Power Platform solutions for our business?</span></h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Getting started is easy! Simply reach out to us for a consultation, and our team of experts will work closely with you to understand your requirements, assess your current infrastructure, and devise a customized plan for implementing Microsoft Power Platform solutions tailored to your business needs.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                <h3><span class="num">4.</span> <span>Can the Microsoft Power Platform integrate with existing systems and applications?</span></h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Yes, the Microsoft Power Platform is highly versatile and can integrate seamlessly with your existing systems and applications. Whether it's connecting to your CRM, ERP, or other third-party tools, we can ensure a smooth integration that enhances interoperability and data flow.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                <h3><span class="num">5.</span> <span>Is the Microsoft Power Platform suitable for businesses of all sizes?</span></h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>Absolutely! The Microsoft Power Platform is designed to scale and adapt to businesses of all sizes, from startups to enterprise-level organizations. Whether you're looking to streamline operations, drive growth, or enhance customer engagement, the Power Platform offers solutions tailored to your specific requirements.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -367,9 +384,9 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <h3>Transform Your Business: Engage with Our Expert Consultants</h3>
+              <p>Elevate your business strategy with insights from our experienced consultants. Talk to our consultants to initiate a conversation tailored to your unique requirements.</p>
+              <a class="cta-btn" id="emailButton">Talk to our Consultants.</a>
             </div>
           </div>
         </div>
@@ -383,7 +400,7 @@
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>"Have questions or ready to get started? We're just a message away. Reach out to us today and let's kickstart your journey towards digital transformation.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -415,8 +432,7 @@
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <p>support@dynamicsx.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -487,11 +503,11 @@
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/dynamics-x/"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+    <!--    <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -500,16 +516,17 @@
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Custom Applications</a></li>
+            <li><a href="#">Microsoft Dataverse</a></li>
+            <li><a href="#">Business Intelligence</a></li>
+            <li><a href="#">automation</a></li>
+            <li><a href="#">Power Pages</a></li>
+            <li><a href="#">AI Builder</a></li>
           </ul>
         </div>
 
@@ -518,8 +535,7 @@
           <p>A108 Adam Street</p>
           <p>New York, NY 535022</p>
           <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p><strong>Email:</strong> <span>support@dynamicsx.com</span></p>
         </div>
 
       </div>
